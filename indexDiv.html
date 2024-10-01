@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Div vs Tags Semânticas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, nav, main, footer, section, article {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        .generic {
+            background-color: #efefef;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Exemplo de <code>div</code> vs Tags Semânticas</h1>
+
+    <!-- Exemplo usando div -->
+    <div class="generic">
+        <div class="generic">
+            <h2>Cabeçalho com Div</h2>
+            <p>Este é um exemplo de cabeçalho usando a tag <code>&lt;div&gt;</code>.</p>
+        </div>
+
+        <div class="generic">
+            <h3>Navegação com Div</h3>
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="generic">
+            <h3>Artigo com Div</h3>
+            <p>Este é um exemplo de artigo usando a tag <code>&lt;div&gt;</code>. Ele contém informações principais.</p>
+        </div>
+
+        <div class="generic">
+            <p>Rodapé com Div</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
